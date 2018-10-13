@@ -27,3 +27,6 @@ http://www.barnesandnoble.com/w/python-programming-for-the-absolute-beginner-thi
 https://www.python.org/
 http://www.pygame.org/wiki/GettingStarted
 http://pythongames.weebly.com/livewires.html
+
+Update to Livewires:
+https://pypi.org/project/SuperWires/
