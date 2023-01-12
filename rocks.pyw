@@ -1,6 +1,6 @@
 # program name:	rocks.pyw
 # programmer:	Bennett Wenger
-# date:		    4/14/2016
+# date:		4/14/2016
 
 # ROCKS
 # A modification of 'Astrocrash'
@@ -47,7 +47,7 @@ class Collider(Wrapper):
 
 # explosion class
 class Explosion(games.Animation):
-    sound = games.load_sound("lib\\snd\\explosion.ogg")
+    sound = games.load_sound("lib\\snd\\explosion.wav")
     images = ["lib\\img\\explosion1.png",
               "lib\\img\\explosion2.png",
               "lib\\img\\explosion3.png",
@@ -109,8 +109,8 @@ class Rock(Wrapper):
 
 # ship class
 class Ship(Collider):
-    image = games.load_image("lib\\img\\ship.png")
-    sound = games.load_sound("lib\\snd\\thrust.ogg")
+    image = games.load_image("lib\\img\\ship.bmp")
+    sound = games.load_sound("lib\\snd\\thrust.wav")
     ROTATION_STEP = 3
     VELOCITY_STEP = .03
     MISSILE_DELAY = 15
@@ -150,8 +150,8 @@ class Ship(Collider):
 
 # missile class
 class Missile(Collider):
-    image = games.load_image("lib\\img\\missile.png")
-    sound = games.load_sound("lib\\snd\\missile.ogg")
+    image = games.load_image("lib\\img\\missile.bmp")
+    sound = games.load_sound("lib\\snd\\missile.wav")
     BUFFER = 50
     VELOCITY_FACTOR = 10
     LIFETIME = 40
@@ -182,7 +182,7 @@ class Missile(Collider):
 class Game(object):
     def __init__(self):
         self.level = 0
-        self.sound = games.load_sound("lib\\snd\\level.ogg")
+        self.sound = games.load_sound("lib\\snd\\level.wav")
         self.score = games.Text(value = 0,
                                 size = 40,
                                 color = color.white,
@@ -197,10 +197,10 @@ class Game(object):
         games.screen.add(self.ship)
 
     def play(self):
-        games.music.load("lib\\snd\\theme.ogg")
+        games.music.load("lib\\snd\\theme.mid")
         games.music.play(-1)
 
-        games.screen.background = games.load_image("lib\\img\\background.jpg",
+        games.screen.background = games.load_image("lib\\img\\nebula.jpg",
                                                    transparent = 0)
         self.advance()
         games.screen.mainloop()
