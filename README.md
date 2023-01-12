@@ -15,3 +15,10 @@ I'm uploading this as an example of what I can do in Python.
 I'd like to get this released as a usable game, using the latest Python and SuperWires.
 My original PNG and audio files have been lost, and the Pygame website is down.
 So I've got some work to do.
+
+Testing notes:
+Windows 11
+Python 3.11.1
+Pygame 2.1.3.dev8
+SuperWires 0.9.6
+
