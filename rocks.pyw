@@ -1,13 +1,13 @@
 # program name:	rocks.pyw
 # programmer:	Bennett Wenger
-# date:		4/14/2016
+# date:		    4/14/2016
 
 # ROCKS
 # A modification of 'Astrocrash'
 
 # imports
 import math, random, time, pygame
-from livewires import games, color
+from superwires import games, color
 
 # initiate game screen
 games.init(screen_width = 800, screen_height = 600, fps = 50)
