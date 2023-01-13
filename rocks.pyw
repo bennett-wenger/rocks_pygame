@@ -109,7 +109,7 @@ class Rock(Wrapper):
 
 # ship class
 class Ship(Collider):
-    image = games.load_image("lib\\img\\ship.bmp")
+    image = games.load_image("lib\\img\\ship.png")
     sound = games.load_sound("lib\\snd\\thrust.ogg")
     ROTATION_STEP = 3
     VELOCITY_STEP = .03
@@ -150,7 +150,7 @@ class Ship(Collider):
 
 # missile class
 class Missile(Collider):
-    image = games.load_image("lib\\img\\missile.bmp")
+    image = games.load_image("lib\\img\\missile.png")
     sound = games.load_sound("lib\\snd\\missile.ogg")
     BUFFER = 50
     VELOCITY_FACTOR = 10
