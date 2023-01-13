@@ -113,7 +113,7 @@ class Ship(Collider):
     sound = games.load_sound("lib\\snd\\thrust.ogg")
     ROTATION_STEP = 3
     VELOCITY_STEP = .03
-    MISSILE_DELAY = 15
+    MISSILE_DELAY = 10
     VELOCITY_MAX = 3
 
     def __init__(self, game, x, y):
@@ -153,8 +153,8 @@ class Missile(Collider):
     image = games.load_image("lib\\img\\missile.png")
     sound = games.load_sound("lib\\snd\\missile.ogg")
     BUFFER = 50
-    VELOCITY_FACTOR = 10
-    LIFETIME = 40
+    VELOCITY_FACTOR = 20
+    LIFETIME = 20
 
     def __init__(self, ship_x, ship_y, ship_angle):
         Missile.sound.play()
