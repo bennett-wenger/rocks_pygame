@@ -1,6 +1,6 @@
 # program name:	rocks.pyw
 # programmer:	Bennett Wenger
-# date:		4/14/2016
+# date:		    2016, 2023
 
 # ROCKS
 # A modification of 'Astrocrash'

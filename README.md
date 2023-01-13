@@ -16,6 +16,10 @@ I'd like to get this released as a usable game, using the latest Python and Supe
 My original PNG and audio files have been lost, and the Pygame website is down.
 So I've got some work to do.
 
+First official release is up!
+Download the ZIP to find the EXE,
+or run it directly in Python (see testing notes below).
+
 Testing notes:
 Windows 11
 Python 3.11.1
