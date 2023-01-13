@@ -200,7 +200,7 @@ class Game(object):
         games.music.load("lib\\snd\\theme.ogg")
         games.music.play(-1)
 
-        games.screen.background = games.load_image("lib\\img\\nebula.jpg",
+        games.screen.background = games.load_image("lib\\img\\background.jpg",
                                                    transparent = 0)
         self.advance()
         games.screen.mainloop()
